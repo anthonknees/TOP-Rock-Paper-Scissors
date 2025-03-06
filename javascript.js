@@ -7,23 +7,6 @@ function getRandomIntInclusive(min, max) {
 // https://stackoverflow.com/questions/1527803/generating-random-whole-numbers-in-javascript-in-a-specific-range
 
 
-function getComputerChoice() {
-  let randomNumber = getRandomIntInclusive(1, 3);
-  if (randomNumber === 1){
-    return "Rock"
-  }
-  else if (randomNumber === 2){
-    return "Paper"
-  }
-  else if (randomNumber === 3){
-    return "Scissors"
-  }
-}
-
-function getHumanChoice() {
-  return prompt("Rock, paper or scissors?")
-}
-
 
 
 
@@ -84,6 +67,22 @@ function playGame(){
     else {
       console.log("This outcome hasn't been written yet..")
     }
+  }
+  function getComputerChoice() {
+    let randomNumber = getRandomIntInclusive(1, 3);
+    if (randomNumber === 1){
+      return "Rock"
+    }
+    else if (randomNumber === 2){
+      return "Paper"
+    }
+    else if (randomNumber === 3){
+      return "Scissors"
+    }
+  }
+  
+  function getHumanChoice() {
+    return prompt("Rock, paper or scissors?")
   }
   
   
